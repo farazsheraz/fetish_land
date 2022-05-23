@@ -1,0 +1,77 @@
+@import url(utility.css);
+body {
+    margin: 0;
+    padding: 0;
+    font-family: var(--font-Bebas);
+    overflow-x: hidden;
+}
+
+a {
+    text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: var(--font-Bebas);
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+ul {
+    padding: 0;
+}
+
+li {
+    list-style: none;
+}
+
+
+/* ::placeholder {
+    color: var(--grey) !important;
+} 
+
+input:focus,
+input:focus-visible,
+input:focus-within {
+    box-shadow: none !important;
+    outline: 0 !important;
+}
+
+*/
+
+
+/*===== NAVBAR ====*/
+
+
+/*BANNER*/
+
+
+/*Home Contact Section*/
+
+.bg-contact {
+    background-image: url('../images/bg-contact.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+/*=== MEDIA QUERY ===*/
+
+
+/* ============ mobile view ============ */
+
+@media all and (max-width: 991px) {}
+
+@media screen and (max-width: 767px) {}
+
+@media screen and (max-width: 576px) {}
+
+
+/*=== MEDIA QUERY END===*/

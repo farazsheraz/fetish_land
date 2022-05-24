@@ -51,6 +51,31 @@ input:focus-within {
 
 /*BANNER*/
 
+.prev,
+.next {
+    position: absolute;
+    top: 0;
+}
+
+.prev {
+    left: -70px;
+    z-index: 99;
+}
+
+.next {
+    right: -70px;
+}
+
+.talent-slider .prev,
+.talent-slider .next {
+    top: 200px !important;
+}
+
+.clip-slider .prev,
+.clip-slider .next {
+    top: 50px !important;
+}
+
 
 /*Home Contact Section*/
 

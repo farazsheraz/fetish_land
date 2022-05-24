@@ -1,9 +1,11 @@
-@import url('http://fonts.cdnfonts.com/css/bebas');
+/* @import url('http://fonts.cdnfonts.com/css/bebas'); */
+
 :root {
     --font-Bebas: 'Bebas', sans-serif;
+    --white: #fff;
     --green-voilet: #053843;
     --green-voilet-1: #085e6f;
-    --soil-green: #b68d35;
+    --green-soil: #b68d35;
     --dark-grey: #3a3a3a;
     --purple: #9d4bba;
 }

@@ -31,25 +31,58 @@ $(document).ready(function() {
 
 
     // SLICK SLIDER - post
-    $(".post-slider").slick({
+    $(".clip-slider").slick({
         dots: false,
-        arrows: false,
+        arrows: true,
         autoplay: true,
         infinite: true,
         speed: 500,
         slidesToShow: 3,
+        prevArrow: '<a class="prev"><img src="assets/images/prev.svg" alt=""></a>',
+        nextArrow: '<a class="next"><img src="assets/images/next.svg" alt=""></a>',
         responsive: [{
                 breakpoint: 768,
                 settings: {
                     slidesToShow: 2,
-                    slidesToScroll: 2
+                    slidesToScroll: 2,
+                    arrows: false
                 }
             },
             {
                 breakpoint: 480,
                 settings: {
                     slidesToShow: 1,
-                    slidesToScroll: 1
+                    slidesToScroll: 1,
+                    arrows: false
+                }
+            }
+        ]
+    });
+
+
+    $(".talent-slider").slick({
+        dots: false,
+        arrows: true,
+        autoplay: true,
+        infinite: true,
+        speed: 500,
+        slidesToShow: 3,
+        prevArrow: '<a class="prev"><img src="assets/images/prev.svg" alt=""></a>',
+        nextArrow: '<a class="next"><img src="assets/images/next.svg" alt=""></a>',
+        responsive: [{
+                breakpoint: 768,
+                settings: {
+                    slidesToShow: 2,
+                    slidesToScroll: 2,
+                    arrows: false
+                }
+            },
+            {
+                breakpoint: 480,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+                    arrows: false
                 }
             }
         ]

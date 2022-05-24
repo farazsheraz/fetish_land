@@ -39,8 +39,16 @@
     background-color: var(--purple);
 }
 
+.bg-green-voilet {
+    background-color: var(--green-voilet);
+}
+
 .color-green-voilet-1 {
     color: var(--green-voilet-1);
+}
+
+.color-green-soil {
+    color: var(--green-soil);
 }
 
 

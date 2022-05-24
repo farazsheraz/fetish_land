@@ -49,7 +49,18 @@ input:focus-within {
 /*===== NAVBAR ====*/
 
 
-/*BANNER*/
+/*=======HOME=========*/
+
+.sqaure::after {
+    position: absolute;
+    content: '';
+    background-color: var(--grey);
+    width: 615px;
+    height: 530px;
+    left: -350px;
+    z-index: -9;
+    top: -74px;
+}
 
 .prev,
 .next {
@@ -75,9 +86,6 @@ input:focus-within {
 .clip-slider .next {
     top: 50px !important;
 }
-
-
-/*Home Contact Section*/
 
 .bg-contact {
     background-image: url('../images/bg-contact.png');

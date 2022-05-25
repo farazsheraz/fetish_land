@@ -20,7 +20,7 @@ h6 {
 }
 
 a:hover {
-    text-decoration: none;
+    color: var(--green-soil) !important;
 }
 
 ul {
@@ -31,11 +31,12 @@ li {
     list-style: none;
 }
 
+::placeholder {
+    color: var(--grey-dark) !important;
+}
 
-/* ::placeholder {
-    color: var(--grey) !important;
-} 
 
+/*
 input:focus,
 input:focus-visible,
 input:focus-within {
@@ -49,7 +50,49 @@ input:focus-within {
 /*===== NAVBAR ====*/
 
 
+/*---- SIDEBAR MENU ---*/
+
+.navbar {
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+.offcanvas-header {
+    display: none;
+}
+
+
+/*---- SIDEBAR MENU END---*/
+
+
+/*---- THEME MENU CSS---*/
+
+.navbar-brand {
+    position: absolute;
+    left: 42.5%;
+    top: -40px;
+}
+
+.navbar a {
+    color: var(--white);
+}
+
+.topbar .social img {
+    width: 30px;
+}
+
+.search-field {
+    top: 6px;
+    left: 25px;
+}
+
+
 /*=======HOME=========*/
+
+.banner h1 {
+    letter-spacing: 0.4em;
+    line-height: 100px;
+}
 
 .sqaure::after {
     position: absolute;
@@ -100,7 +143,47 @@ input:focus-within {
 
 /* ============ mobile view ============ */
 
-@media all and (max-width: 991px) {}
+@media all and (max-width: 991px) {
+    /*NAVBAR CANVAS*/
+    .offcanvas-header {
+        display: block;
+    }
+    .mobile-offcanvas {
+        visibility: hidden;
+        transform: translateX(-100%);
+        border-radius: 0;
+        display: block;
+        position: fixed;
+        top: 0;
+        left: 0;
+        height: 100%;
+        z-index: 1200;
+        width: 100%;
+        overflow-y: scroll;
+        overflow-x: hidden;
+        transition: visibility .3s ease-in-out, transform .3s ease-in-out;
+        /* background-color: #fff; */
+    }
+    .mobile-offcanvas.show {
+        visibility: visible;
+        transform: translateX(0);
+    }
+    .mobile-offcanvas .container,
+    .mobile-offcanvas .container-fluid {
+        display: block;
+    }
+    .offcanvas-header .btn-close {
+        opacity: 1;
+        filter: invert(1);
+    }
+    /*NAVBAR CANVAS END*/
+    /*NAVBAR THEME CSS*/
+    .navbar-brand {
+        position: relative;
+        left: 0;
+        top: 0;
+    }
+}
 
 @media screen and (max-width: 767px) {}
 

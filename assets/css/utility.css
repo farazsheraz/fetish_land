@@ -55,6 +55,10 @@
     color: var(--grey);
 }
 
+.color-grey-dark {
+    color: var(--grey-dark);
+}
+
 
 /*=== FONT-SIZE ===*/
 

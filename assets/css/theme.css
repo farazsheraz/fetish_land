@@ -135,6 +135,7 @@ input:focus-within {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    height: 100vh;
 }
 
 
@@ -177,11 +178,20 @@ input:focus-within {
         filter: invert(1);
     }
     /*NAVBAR CANVAS END*/
-    /*NAVBAR THEME CSS*/
+    /*THEME CSS*/
     .navbar-brand {
         position: relative;
         left: 0;
         top: 0;
+    }
+    .banner h1 {
+        line-height: normal;
+    }
+    .sqaure::after {
+        height: 340px;
+    }
+    .fs-18 {
+        font-size: 16px;
     }
 }
 

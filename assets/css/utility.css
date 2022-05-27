@@ -43,6 +43,18 @@
     background-color: var(--green-voilet);
 }
 
+.bg-grey {
+    background-color: var(--grey);
+}
+
+.bg-grey-light {
+    background-color: var(--grey-light);
+}
+
+.bg-grey-dark {
+    background-color: var(--grey-dark);
+}
+
 .color-green-voilet-1 {
     color: var(--green-voilet-1);
 }
